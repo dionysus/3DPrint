@@ -921,8 +921,8 @@
 #if ENABLED(AUTO_BED_LEVELING_LINEAR) || ENABLED(AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 4
-  #define GRID_MAX_POINTS_Y 4
+  #define GRID_MAX_POINTS_X 9
+  #define GRID_MAX_POINTS_Y 7
 
   // Set the boundaries for probing (where the probe can reach).
   #define LEFT_PROBE_BED_POSITION 15
@@ -1013,7 +1013,7 @@
 #endif
 
 // Add a menu item to move between bed corners for manual bed adjustment
-//#define LEVEL_BED_CORNERS
+#define LEVEL_BED_CORNERS
 
 /**
  * Commands to execute at the end of G29 probing.
@@ -1341,7 +1341,7 @@
  * you must uncomment the following option or it won't work.
  *
  */
-#define SDSUPPORT
+//#define SDSUPPORT
 
 /**
  * SD CARD: SPI SPEED
